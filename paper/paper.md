@@ -88,16 +88,23 @@ We obtained most of the
 relations between the entities from public databases using SPARQL
 queries. 
 
-
 ##  Omics data mapping to the knowledge graph
   - Biostudies mapping to knowledge graph
   - Multiomics data RDF representation definition
+
 ## Clinical knowledge graph
-  - OMOP SPARQL endpoint
-    - Mapheator: https://github.com/oeg-upm/mapeathor
-    - ONTOP: https://ontop-vkg.org
-    - RLM/ShML
-  - NLP
+
+Clinical data for research is frequently modeled following the [OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/cdm54.html). The OMOP-CDM provides not only a data model but also a graph like structure of concepts and their relationships that leverages widely accepted clinical coding systems such as SNOMED CT, RxNorm, LOINC, and ICD-10, among others. It would make sense to enable querying an OMOP-CDM resource using SPARQL so that it could be easily integrated with other resources. Instead of replicating the data in a different endpoint we can make use of [ontop](https://ontop-vkg.org), a Virtual Knowledge Graph system which can expose the content of arbitrary relational databases as knowledge graphs. These graphs are virtual, which means that data remains in the data sources instead of being moved to another database.
+
+Ontop translates SPARQL queries (opens new window) expressed over the knowledge graphs into SQL queries executed by the relational data sources. It relies on R2RML mappings (opens new window) and can take advantage of lightweight ontologies.
+
+### Clinical NLP
+
+ 
+To achieve our objectives, we conducted a comprehensive survey of open source language models available and evaluated their suitability for our task. We explored different models, taking into consideration factors such as performance, computational requirements, and ease of deployment. Subsequently, we sought to run the selected models on a local computer, ensuring that the infrastructure requirements were met.
+
+Having established a working environment for LLMs, we developed a set of pipelines that incorporated various natural language processing techniques to extract relevant biological terms from textual data. These terms were then matched and mapped to the corresponding ontology terms, thereby providing a standardized representation of the extracted information. By utilizing Linked Data principles, we aimed to create an interconnected network of biological knowledge that would facilitate data integration and enable advanced analysis.
+
 ## Machine Learning on knowledge graph
   - Graph Neural Networks
     - StellarGraph
@@ -108,9 +115,6 @@ queries.
     - Node feature prediction: Data imputation
     - Link prediction: miRNA target prediction
  
-To achieve our objectives, we conducted a comprehensive survey of open source language models available and evaluated their suitability for our task. We explored different models, taking into consideration factors such as performance, computational requirements, and ease of deployment. Subsequently, we sought to run the selected models on a local computer, ensuring that the infrastructure requirements were met.
-
-Having established a working environment for LLMs, we developed a set of pipelines that incorporated various natural language processing techniques to extract relevant biological terms from textual data. These terms were then matched and mapped to the corresponding ontology terms, thereby providing a standardized representation of the extracted information. By utilizing Linked Data principles, we aimed to create an interconnected network of biological knowledge that would facilitate data integration and enable advanced analysis.
 
 ![Caption for BioHackrXiv logo figure](./biohackrxiv.png)
 
@@ -124,4 +128,4 @@ We would like to thank the fellow participants at BioHackathon 2023 for their co
 
 ## References
 
-1.
+1. 
