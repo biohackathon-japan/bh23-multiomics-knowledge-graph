@@ -56,6 +56,22 @@ LLMs, such as OpenAI's GPT-3.5 architecture, have demonstrated remarkable capabi
 
 # Outcomes
 
+## Knowledge graph for multi-omics data integration
+
+We generated a knowledge graph specifically intended for integrating
+multi-omics data. While there are many knowledge graphs for biological
+and biomedical data available (Monarch, PheKnowLator, etc.)[...], a
+graph for integrating multi-omics data should satisfy certain
+requirements. First, nodes should represent biological entities that
+can be measured within an omics experiment. While it is, in principle,
+possible to add nodes that cannot be measured directly (such as the
+functions of genes), these nodes will likely introduce noise in
+downstream analyses and should be avoided. Second, all entities that
+can be measured by an omics experiments should be represented in the
+graph. This principle aims at completeness, i.e., the ability of the
+graph to represent all measurements, so that no information is lost
+when using the graph. 
+
 - Biomedical knowledge graph
   - Uniprot
   - mirDB
