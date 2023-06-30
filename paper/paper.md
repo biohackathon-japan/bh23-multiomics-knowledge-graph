@@ -24,7 +24,7 @@ biohackathon_url:   "https://2023.biohackathon.org/"
 biohackathon_location: "Kagawa, Japan, 2023"
 group: R1
 # URL to project git repo --- should contain the actual paper.md:
-git_url: [https://github.com/biohackathon-jp/bh23-multiomics-knowledge-graph](https://github.com/biohackathon-japan/bh23-multiomics-knowledge-graph)
+git_url: https://github.com/biohackathon-japan/bh23-multiomics-knowledge-graph
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
 authors_short: First Author \emph{et al.}
