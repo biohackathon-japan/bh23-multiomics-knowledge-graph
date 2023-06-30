@@ -79,14 +79,14 @@ include co-mentions in literature because this co-mention does not
 represent a biological relation.
 
 The graph we built is based on Ensembl identifiers as primary means to
-identify genes, transcripts, and proteins; it also includes chemicals
-(metabolites, identified using the ChEBI ontology), diseases
-(identified using ICD-9), and microRNAs (identified using their miRDB
-identifier). 
+identify genes, transcripts, and proteins; it includes chemicals
+(metabolites) identified using the ChEBI ontology, diseases
+identified using ICD-9, and microRNAs identified using their miRDB
+identifier. We obtained most of the relations between the entities
+from public databases using SPARQL queries. We 
 
-We obtained most of the
-relations between the entities from public databases using SPARQL
-queries. 
+
+For example, 
 
 - Biomedical knowledge graph
   - Uniprot
