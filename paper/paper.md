@@ -58,6 +58,12 @@ LLMs, such as OpenAI's GPT-3.5 architecture, have demonstrated remarkable capabi
 
 ## Knowledge graph for multi-omics data integration
 
+- Biomedical knowledge graph
+  - Uniprot
+  - mirDB
+  - MED-RT
+  - DisGeNet
+  
 We generated a knowledge graph specifically intended for integrating
 multi-omics data. While there are many knowledge graphs for biological
 and biomedical data available (Monarch, PheKnowLator, etc.)[...], a
@@ -88,21 +94,17 @@ We obtained most of the
 relations between the entities from public databases using SPARQL
 queries. 
 
-- Biomedical knowledge graph
-  - Uniprot
-  - mirDB
-  - MED-RT
-  - DisGeNet
-- Omics data
+
+##  Omics data mapping to the knowledge graph
   - Biostudies mapping to knowledge graph
   - Multiomics data RDF representation definition
-- Clinical knowledge graph
+## Clinical knowledge graph
   - OMOP SPARQL endpoint
     - Mapheator: https://github.com/oeg-upm/mapeathor
     - ONTOP: https://ontop-vkg.org
     - RLM/ShML
   - NLP
-- Machine Learning on knowledge graph
+## Machine Learning on knowledge graph
   - Graph Neural Networks
     - StellarGraph
     - KGCN
