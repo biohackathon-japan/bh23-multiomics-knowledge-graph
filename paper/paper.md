@@ -1,5 +1,5 @@
 ---
-title: 'BioHackJP 2023 Report R1: linked data standardization with LLMs'
+title: 'BioHackJP 2023 Report R4: Clinical Knowledge Graph'
 title_short: 'BioHackJP 2023 LD-LLM'
 tags:
   - Linked Data
@@ -24,13 +24,17 @@ biohackathon_url:   "https://2023.biohackathon.org/"
 biohackathon_location: "Kagawa, Japan, 2023"
 group: R1
 # URL to project git repo --- should contain the actual paper.md:
-git_url: https://github.com/biohackathon-jp/bh23-report-template
+git_url: [https://github.com/biohackathon-jp/bh23-multiomics-knowledge-graph](https://github.com/biohackathon-japan/bh23-multiomics-knowledge-graph)
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
 authors_short: First Author \emph{et al.}
 ---
 
 # Background
+
+- Personalized medicine can benefit of the knowledge already generated
+- Multi-omics data analysis must move from matrices analysis to graph analysis
+- Use case: Multilevel omics for the discovery of biomarkers and therapeutic targets for stroke
 
 The field of bioinformatics plays a crucial role in enabling researchers to extract meaningful insights from the vast amount of biological data generated today. With advancements in technology and the availability of large-scale datasets, it has become increasingly important to develop standardized approaches for representing and integrating biological information. Linked data, a method for publishing structured data on the web, has emerged as a promising solution for facilitating the integration and interoperability of diverse biological data sources.
 
@@ -40,6 +44,21 @@ LLMs, such as OpenAI's GPT-3.5 architecture, have demonstrated remarkable capabi
 
 # Outcomes
 
+- Biomedical knowledge graph
+  - Uniprot
+  - mirDB
+  - MED-RT
+  - DisGeNet
+- Omics data
+  - Biostudies mapping to knowledge graph
+  - Multiomics data RDF representation definition
+- Clinical knowledge graph
+  - OMOP SPARQL endpoint
+    - Mapheator: https://github.com/oeg-upm/mapeathor
+    - ONTOP: https://ontop-vkg.org
+    - RLM/ShML
+  - NLP
+    
 To achieve our objectives, we conducted a comprehensive survey of open source language models available and evaluated their suitability for our task. We explored different models, taking into consideration factors such as performance, computational requirements, and ease of deployment. Subsequently, we sought to run the selected models on a local computer, ensuring that the infrastructure requirements were met.
 
 Having established a working environment for LLMs, we developed a set of pipelines that incorporated various natural language processing techniques to extract relevant biological terms from textual data. These terms were then matched and mapped to the corresponding ontology terms, thereby providing a standardized representation of the extracted information. By utilizing Linked Data principles, we aimed to create an interconnected network of biological knowledge that would facilitate data integration and enable advanced analysis.
