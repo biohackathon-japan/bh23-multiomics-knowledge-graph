@@ -58,7 +58,16 @@ LLMs, such as OpenAI's GPT-3.5 architecture, have demonstrated remarkable capabi
     - ONTOP: https://ontop-vkg.org
     - RLM/ShML
   - NLP
-    
+- Machine Learning on knowledge graph
+  - Graph Neural Networks
+    - StellarGraph
+    - KGCN
+  - Use cases
+    - Graph classification: Patient classification
+    - Node classification: Biomarkers
+    - Node feature prediction: Data imputation
+    - Link prediction: miRNA target prediction
+ 
 To achieve our objectives, we conducted a comprehensive survey of open source language models available and evaluated their suitability for our task. We explored different models, taking into consideration factors such as performance, computational requirements, and ease of deployment. Subsequently, we sought to run the selected models on a local computer, ensuring that the infrastructure requirements were met.
 
 Having established a working environment for LLMs, we developed a set of pipelines that incorporated various natural language processing techniques to extract relevant biological terms from textual data. These terms were then matched and mapped to the corresponding ontology terms, thereby providing a standardized representation of the extracted information. By utilizing Linked Data principles, we aimed to create an interconnected network of biological knowledge that would facilitate data integration and enable advanced analysis.
