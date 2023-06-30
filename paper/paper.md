@@ -2,8 +2,8 @@
 title: 'BioHackJP 2023 Report R4: Clinical Knowledge Graph'
 title_short: 'BioHackJP 2023 LD-LLM'
 tags:
-  - Linked Data
-  - Large Language Models
+  - Clinical Knowledge Graph
+  - Multi-omics data analysis
 authors:
   - name: First Author
     orcid: 0000-0000-0000-0000
