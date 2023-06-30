@@ -83,10 +83,34 @@ identify genes, transcripts, and proteins; it includes chemicals
 (metabolites) identified using the ChEBI ontology, diseases
 identified using ICD-9, and microRNAs identified using their miRDB
 identifier. We obtained most of the relations between the entities
-from public databases using SPARQL queries. We 
+from public databases using SPARQL queries. For example, we used
+UniProt to provide the links between the Ensembl identifiers:
+```
+SELECT ?protein ?transcript ?ensprotein ?gene
+WHERE 
+{
+  ?protein rdfs:seeAlso ?transcript .
+  ?protein a up:Protein .
+  ?protein up:organism taxon:9606 .
+  ?transcript a up:Transcript_Resource .
+  ?transcript up:translatedTo ?ensprotein .
+  ?transcript up:transcribedFrom ?gene .
+}
+```
+Similarly, we used the Rhea database to identify metabolites and their
+relations to proteins:
+```
+SELECT ?chem ?chemname ?rhea ?reactionSide1 ?equation
+WHERE {
+  ?chem up:name ?chemname .
+  ?rhea rh:substrates ?reactionSide1 .
+  ?rhea rh:products ?reactionSide2 .
+  ?reactionSide1  rh:contains / rh:compound / rh:chebi ?chem .
+  ?reactionSide1 rh:transformableTo ?reactionSide2 .
+  ?rhea rh:equation ?equation .
+}
+```
 
-
-For example, 
 
 ##  Omics data mapping to the knowledge graph
   - Biostudies mapping to knowledge graph
