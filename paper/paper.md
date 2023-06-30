@@ -32,6 +32,18 @@ authors_short: First Author \emph{et al.}
 
 # Background
 
+There is an increasing generating of multiple types of omics data for
+individual samples. This multi-omics data can capture phenomena on
+multiple different levels and therefore significantly improve our
+understanding of processes within biological samples. Multi-omics data
+is used in a clinical context for improving personalized medicine, in
+model organism research for detailed characterization of biological
+states, and even on the level of single cells
+(cite)[https://www.nature.com/articles/s12276-020-0420-2] to more
+deeply characterize cells.
+
+Multi-omics data is highly dimensional and 
+
 - Personalized medicine can benefit of the knowledge already generated
 - Multi-omics data analysis must move from matrices analysis to graph analysis
 - Use case: Multilevel omics for the discovery of biomarkers and therapeutic targets for stroke
