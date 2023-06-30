@@ -58,12 +58,6 @@ LLMs, such as OpenAI's GPT-3.5 architecture, have demonstrated remarkable capabi
 
 ## Knowledge graph for multi-omics data integration
 
-- Biomedical knowledge graph
-  - Uniprot
-  - mirDB
-  - MED-RT
-  - DisGeNet
-  
 We generated a knowledge graph specifically intended for integrating
 multi-omics data. While there are many knowledge graphs for biological
 and biomedical data available (Monarch, PheKnowLator, etc.)[...], a
