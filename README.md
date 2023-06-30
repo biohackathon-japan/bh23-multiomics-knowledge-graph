@@ -36,12 +36,18 @@ The workflow and queries for constructing the knowledge graph is available here.
   - Multiomics data RDF representation definition
 
 ### Clinical knowledge graph
+We develop an OMOP SPARQL endpoint using:
+- ONTOP: https://ontop-vkg.org
+- Mapheator: https://github.com/oeg-upm/mapeathor
+- RLM/ShML: https://github.com/herminiogg/ShExML/
+    
+Clinical data for research is frequently modeled following the [OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/cdm54.html). The OMOP-CDM provides not only a data model but also a graph like structure of concepts and their relationships that leverages widely accepted clinical coding systems such as SNOMED CT, RxNorm, LOINC, and ICD-10, among others. It would make sense to enable querying an OMOP-CDM resource using SPARQL so that it could be easily integrated with other resources. Instead of replicating the data in a different endpoint we can make use of [ontop](https://ontop-vkg.org), a Virtual Knowledge Graph system which can expose the content of arbitrary relational databases as knowledge graphs. These graphs are virtual, which means that data remains in the data sources instead of being moved to another database.
 
-Clinical data for research is frequently modeled following the [OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/cdm54.html). The OMOP-CDM provides not only a data model but also a graph like structure of concepts and their relationships
-  - OMOP SPARQL endpoint
-    - Mapheator: https://github.com/oeg-upm/mapeathor
-    - RLM/ShML: https://github.com/herminiogg/ShExML/
-    - ONTOP: https://ontop-vkg.org
+Ontop translates SPARQL queries (opens new window) expressed over the knowledge graphs into SQL queries executed by the relational data sources. It relies on R2RML mappings (opens new window) and can take advantage of lightweight ontologies.
+
+  
+
+    
 
   - NLP
 - Machine Learning on knowledge graph
