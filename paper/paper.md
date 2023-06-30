@@ -70,7 +70,23 @@ downstream analyses and should be avoided. Second, all entities that
 can be measured by an omics experiments should be represented in the
 graph. This principle aims at completeness, i.e., the ability of the
 graph to represent all measurements, so that no information is lost
-when using the graph. 
+when using the graph. Third, edges should represent meaningful
+biological connections. We will use the graph to let information
+"flow" between entities, and this flow should capture biological
+associations. Desirable edges include relations between transcripts
+and proteins into which they will be translated. Undesirable edges
+include co-mentions in literature because this co-mention does not
+represent a biological relation.
+
+The graph we built is based on Ensembl identifiers as primary means to
+identify genes, transcripts, and proteins; it also includes chemicals
+(metabolites, identified using the ChEBI ontology), diseases
+(identified using ICD-9), and microRNAs (identified using their miRDB
+identifier). 
+
+We obtained most of the
+relations between the entities from public databases using SPARQL
+queries. 
 
 - Biomedical knowledge graph
   - Uniprot
