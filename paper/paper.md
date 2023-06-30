@@ -32,9 +32,9 @@ authors_short: First Author \emph{et al.}
 
 # Background
 
-There is an increasing generating of multiple types of omics data for
+There is an increasing generalization of multiple types of omics data for
 individual samples. This multi-omics data can capture phenomena on
-multiple different levels and therefore significantly improve our
+multiple different levels and, therefore significantly improve our
 understanding of processes within biological samples. Multi-omics data
 is used in a clinical context for improving personalized medicine, in
 model organism research for detailed characterization of biological
@@ -88,23 +88,21 @@ We obtained most of the
 relations between the entities from public databases using SPARQL
 queries. 
 
+
 ##  Omics data mapping to the knowledge graph
-  - Biostudies mapping to knowledge graph
-  - Multiomics data RDF representation definition
+  - Biostudies mapping to knowledge graph:
+    Biostudy refers to a comprehensive and curated database that stores and provides access to metadata and information related to biological and biomedical research studies. It serves as a centralized repository for a wide range of study-related data. It aims to facilitate data sharing, discovery, and integration in the field of life sciences, allowing researchers to access and explore a wealth of information about various biological studies conducted worldwide. Biostudy mapping to a knowledge graph involves linking and integrating data from the databases into a knowledge graph. These databases contain vast information related to biological and biomedical research studies, including metadata, study designs, experimental data, and more.
+The mapping begins by extracting relevant data from the Biostudies database, including study information, keywords, authors, affiliations, experimental variables, and other associated metadata. This data is then transformed and structured in a way that aligns with the schema and ontology of the knowledge graph. Next, the mapped data is integrated into the knowledge graph, which serves as a centralized repository of interconnected knowledge. The knowledge graph represents the relationships and connections between different entities, such as biological concepts, genes, diseases, and more.  Mapping this information to a knowledge graph enables efficient querying and retrieval of specific information by leveraging the graph's rich connections and relationships. Additionally, it facilitates data interoperability and integrates diverse biomedical datasets, enabling comprehensive analysis and discovery of new insights.
 
+  - Multiomics data RDF representation definition:
+    Multiomics data RDF representation refers to defining the structure and format of multiomics data using the Resource Description Framework (RDF). Multiomics data refers to integrating data from multiple omics technologies, such as genomics, transcriptomics, proteomics, and metabolomics, among others, to comprehensively understand biological systems. RDF provides a standardized and flexible framework for representing and linking data on the web. It allows for creating structured knowledge graphs that capture the relationships and connections between different data types. In the context of multiomics data, RDF representation involves defining ontologies, classes, properties, and relationships that accurately capture the various omics datasets and their interdependencies. The RDF representation of multiomics data enables interoperability, data integration, and efficient querying across different omics datasets because it can model and link diverse types of omics data into a unified knowledge graph. With the RDF representation of multiomics data, researchers can leverage the power of semantic web technologies and query the knowledge graph using SPARQL, a query language for RDF data. This allows for complex queries that traverse the relationships between different omics datasets, facilitating advanced data analysis, hypothesis generation, and the discovery of novel insights. In summary, the RDF representation of multiomics data provides a standardized and interoperable approach to integrate and analyze diverse omics datasets.
+    
 ## Clinical knowledge graph
-
-Clinical data for research is frequently modeled following the [OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/cdm54.html). The OMOP-CDM provides not only a data model but also a graph like structure of concepts and their relationships that leverages widely accepted clinical coding systems such as SNOMED CT, RxNorm, LOINC, and ICD-10, among others. It would make sense to enable querying an OMOP-CDM resource using SPARQL so that it could be easily integrated with other resources. Instead of replicating the data in a different endpoint we can make use of [ontop](https://ontop-vkg.org), a Virtual Knowledge Graph system which can expose the content of arbitrary relational databases as knowledge graphs. These graphs are virtual, which means that data remains in the data sources instead of being moved to another database.
-
-Ontop translates SPARQL queries (opens new window) expressed over the knowledge graphs into SQL queries executed by the relational data sources. It relies on R2RML mappings (opens new window) and can take advantage of lightweight ontologies.
-
-### Clinical NLP
-
- 
-To achieve our objectives, we conducted a comprehensive survey of open source language models available and evaluated their suitability for our task. We explored different models, taking into consideration factors such as performance, computational requirements, and ease of deployment. Subsequently, we sought to run the selected models on a local computer, ensuring that the infrastructure requirements were met.
-
-Having established a working environment for LLMs, we developed a set of pipelines that incorporated various natural language processing techniques to extract relevant biological terms from textual data. These terms were then matched and mapped to the corresponding ontology terms, thereby providing a standardized representation of the extracted information. By utilizing Linked Data principles, we aimed to create an interconnected network of biological knowledge that would facilitate data integration and enable advanced analysis.
-
+  - OMOP SPARQL endpoint
+    - Mapheator: https://github.com/oeg-upm/mapeathor
+    - ONTOP: https://ontop-vkg.org
+    - RLM/ShML
+  - NLP
 ## Machine Learning on knowledge graph
   - Graph Neural Networks
     - StellarGraph
@@ -115,6 +113,9 @@ Having established a working environment for LLMs, we developed a set of pipelin
     - Node feature prediction: Data imputation
     - Link prediction: miRNA target prediction
  
+To achieve our objectives, we conducted a comprehensive survey of open-source language models available and evaluated their suitability for our task. We explored different models, taking into consideration factors such as performance, computational requirements, and ease of deployment. Subsequently, we sought to run the selected models on a local computer, ensuring that the infrastructure requirements were met.
+
+Having established a working environment for LLMs, we developed a set of pipelines that incorporated various natural language processing techniques to extract relevant biological terms from textual data. These terms were then matched and mapped to the corresponding ontology terms, thereby providing a standardized representation of the extracted information. By utilizing Linked Data principles, we aimed to create an interconnected network of biological knowledge that would facilitate data integration and enable advanced analysis.
 
 ![Caption for BioHackrXiv logo figure](./biohackrxiv.png)
 
@@ -128,4 +129,4 @@ We would like to thank the fellow participants at BioHackathon 2023 for their co
 
 ## References
 
-1. 
+1.
