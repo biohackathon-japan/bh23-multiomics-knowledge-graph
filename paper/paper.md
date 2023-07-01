@@ -180,4 +180,8 @@ We would like to thank the fellow participants at BioHackathon 2023 for their co
 
 ## References
 
-1. 
+1. Yue, Xiang, et al. "Graph embedding on biomedical networks: methods, applications and evaluations." Bioinformatics 36.4 (2020): 1241-1251.
+2. Li, Wentao, et al. "Multi-omics research strategies in ischemic stroke: A multidimensional perspective." Ageing Research Reviews (2022): 101730.
+3. Kojima, Ryosuke, et al. "kGCN: a graph-based deep learning framework for chemical structures." Journal of Cheminformatics 12 (2020): 1-10.
+4. Kesimoglu, Ziynet Nesibe, and Serdar Bozdag. "SUPREME: multiomics data integration using graph convolutional networks." NAR Genomics and Bioinformatics 5.2 (2023): lqad063.
+5. Montaner, Joan, et al. "Multilevel omics for the discovery of biomarkers and therapeutic targets for stroke." Nature Reviews Neurology 16.5 (2020): 247-264.
