@@ -32,7 +32,7 @@ authors_short: First Author \emph{et al.}
 
 # Background
 
-There is an increasing generating of multiple types of omics data for
+There is an increasing generation of multiple types of omics data for
 individual samples. This multi-omics data can capture phenomena on
 multiple different levels and therefore significantly improve our
 understanding of processes within biological samples. Multi-omics data
