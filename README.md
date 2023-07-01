@@ -1,4 +1,4 @@
-# Multi-omics data integration on knowdledge graphs
+# Multi-omics data integration on knowledge graphs
 
 ## Objective
 
