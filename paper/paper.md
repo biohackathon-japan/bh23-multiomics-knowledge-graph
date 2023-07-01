@@ -110,7 +110,18 @@ WHERE {
   ?rhea rh:equation ?equation .
 }
 ```
-
+followed by
+```
+ SELECT DISTINCT
+  ?protein
+  ?rhea 
+WHERE {
+  ?protein up:reviewed true .
+  ?protein up:annotation ?a .
+  ?a a up:Catalytic_Activity_Annotation .
+  ?a up:catalyzedPhysiologicalReaction ?rhea .
+}
+```
 
 ##  Omics data mapping to the knowledge graph
   - Biostudies mapping to knowledge graph
