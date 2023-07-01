@@ -125,16 +125,75 @@ WHERE {
 }
 ```
 
+
+
 ##  Omics data mapping to the knowledge graph
 ### Biostudies mapping to knowledge graph:
 
-Biostudy refers to a comprehensive and curated database that stores and provides access to metadata and information related to biological and biomedical research studies. It serves as a centralized repository for a wide range of study-related data. It aims to facilitate data sharing, discovery, and integration in the field of life sciences, allowing researchers to access and explore a wealth of information about various biological studies conducted worldwide. Biostudy mapping to a knowledge graph involves linking and integrating data from the databases into a knowledge graph. These databases contain vast information related to biological and biomedical research studies, including metadata, study designs, experimental data, and more.
-The mapping begins by extracting relevant data from the Biostudies database, including study information, keywords, authors, affiliations, experimental variables, and other associated metadata. This data is then transformed and structured in a way that aligns with the schema and ontology of the knowledge graph. Next, the mapped data is integrated into the knowledge graph, which serves as a centralized repository of interconnected knowledge. The knowledge graph represents the relationships and connections between different entities, such as biological concepts, genes, diseases, and more.  Mapping this information to a knowledge graph enables efficient querying and retrieval of specific information by leveraging the graph's rich connections and relationships. Additionally, it facilitates data interoperability and integrates diverse biomedical datasets, enabling comprehensive analysis and discovery of new insights.
+Biostudy refers to a comprehensive and curated database that stores
+and provides access to metadata and information related to biological
+and biomedical research studies. It serves as a centralized repository
+for a wide range of study-related data. It aims to facilitate data
+sharing, discovery, and integration in the field of life sciences,
+allowing researchers to access and explore a wealth of information
+about various biological studies conducted worldwide. Biostudy mapping
+to a knowledge graph involves linking and integrating data from the
+databases into a knowledge graph. These databases contain vast
+information related to biological and biomedical research studies,
+including metadata, study designs, experimental data, and more.
+
+The mapping begins by extracting relevant data from the Biostudies
+database, including study information, keywords, authors,
+affiliations, experimental variables, and other associated
+metadata. This data is then transformed and structured in a way that
+aligns with the schema and ontology of the knowledge graph. Next, the
+mapped data is integrated into the knowledge graph, which serves as a
+centralized repository of interconnected knowledge. The knowledge
+graph represents the relationships and connections between different
+entities, such as biological concepts, genes, diseases, and more.
+Mapping this information to a knowledge graph enables efficient
+querying and retrieval of specific information by leveraging the
+graph's rich connections and relationships. Additionally, it
+facilitates data interoperability and integrates diverse biomedical
+datasets, enabling comprehensive analysis and discovery of new
+insights.
+
+
 ### Multiomics data RDF representation definition:
 
-Multiomics data RDF representation refers to defining the structure and format of multiomics data using the Resource Description Framework (RDF). Multiomics data refers to integrating data from multiple omics technologies, such as genomics, transcriptomics, proteomics, and metabolomics, among others, to comprehensively understand biological systems. RDF provides a standardized and flexible framework for representing and linking data on the web. It allows for creating structured knowledge graphs that capture the relationships and connections between different data types. In the context of multiomics data, RDF representation involves defining ontologies, classes, properties, and relationships that accurately capture the various omics datasets and their interdependencies. The RDF representation of multiomics data enables interoperability, data integration, and efficient querying across different omics datasets because it can model and link diverse types of omics data into a unified knowledge graph. With the RDF representation of multiomics data, researchers can leverage the power of semantic web technologies and query the knowledge graph using SPARQL, a query language for RDF data. This allows for complex queries that traverse the relationships between different omics datasets, facilitating advanced data analysis, hypothesis generation, and the discovery of novel insights. In summary, the RDF representation of multiomics data provides a standardized and interoperable approach to integrate and analyze diverse omics datasets.
+Multiomics data RDF representation refers to defining the structure
+and format of multiomics data using the Resource Description Framework
+(RDF). Multiomics data refers to integrating data from multiple omics
+technologies, such as genomics, transcriptomics, proteomics, and
+metabolomics, among others, to comprehensively understand biological
+systems. RDF provides a standardized and flexible framework for
+representing and linking data on the web. It allows for creating
+structured knowledge graphs that capture the relationships and
+connections between different data types. In the context of multiomics
+data, RDF representation involves defining ontologies, classes,
+properties, and relationships that accurately capture the various
+omics datasets and their interdependencies. The RDF representation of
+multiomics data enables interoperability, data integration, and
+efficient querying across different omics datasets because it can
+model and link diverse types of omics data into a unified knowledge
+graph. With the RDF representation of multiomics data, researchers can
+leverage the power of semantic web technologies and query the
+knowledge graph using SPARQL, a query language for RDF data. This
+allows for complex queries that traverse the relationships between
+different omics datasets, facilitating advanced data analysis,
+hypothesis generation, and the discovery of novel insights. In
+summary, the RDF representation of multiomics data provides a
+standardized and interoperable approach to integrate and analyze
+diverse omics datasets.
 
-For correct representation and analysis, it is important to capture the context of omics experimental data captured in the metadata description of biological studies in databases such as BioStudies - [EMBL-EBI](https://www.ebi.ac.uk/biostudies/) and map it to multiomics knowledge graphs. In this regard having the metadata of omics data described in a FAIR way can help researchers to speed up the cumbersome task of constructing knowledge graphs.
+For correct representation and analysis, it is important to capture
+the context of omics experimental data captured in the metadata
+description of biological studies in databases such as BioStudies -
+[EMBL-EBI](https://www.ebi.ac.uk/biostudies/) and map it to multiomics
+knowledge graphs. In this regard having the metadata of omics data
+described in a FAIR way can help researchers to speed up the
+cumbersome task of constructing knowledge graphs.
+
 
 ![image](https://github.com/biohackathon-japan/bh23-multiomics-knowledge-graph/assets/166339/3e4b6179-febd-400d-9c1a-78c533413c09)
 
