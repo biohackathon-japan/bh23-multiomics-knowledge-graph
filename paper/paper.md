@@ -54,6 +54,8 @@ Graph Convolutional Networks (GCNs) can also be employed for multi-omics data an
 
 In this work, we propose the construction of a graph representation where each node represents an entity (e.g., gene, protein, metabolite) and the edges represent relationships or interactions between them. The graph can incorporate multiple omics layers, where each layer corresponds to a specific type of biological entity. We can then apply graph convolutional operations to propagate information through the graph structure. GCNs leverage the graph topology to update the node features based on their neighborhood relationships. This enables capturing local and global patterns within the multi-omics data and allows downstream analysis such as patient classification or biormarker discovery.
 
+![image](https://github.com/biohackathon-japan/bh23-multiomics-knowledge-graph/assets/166339/82e7a532-8a58-4316-814a-b4cf2c17d532)
+
 # Outcomes
 
 ## Knowledge graph for multi-omics data integration
@@ -133,6 +135,8 @@ The mapping begins by extracting relevant data from the Biostudies database, inc
 Multiomics data RDF representation refers to defining the structure and format of multiomics data using the Resource Description Framework (RDF). Multiomics data refers to integrating data from multiple omics technologies, such as genomics, transcriptomics, proteomics, and metabolomics, among others, to comprehensively understand biological systems. RDF provides a standardized and flexible framework for representing and linking data on the web. It allows for creating structured knowledge graphs that capture the relationships and connections between different data types. In the context of multiomics data, RDF representation involves defining ontologies, classes, properties, and relationships that accurately capture the various omics datasets and their interdependencies. The RDF representation of multiomics data enables interoperability, data integration, and efficient querying across different omics datasets because it can model and link diverse types of omics data into a unified knowledge graph. With the RDF representation of multiomics data, researchers can leverage the power of semantic web technologies and query the knowledge graph using SPARQL, a query language for RDF data. This allows for complex queries that traverse the relationships between different omics datasets, facilitating advanced data analysis, hypothesis generation, and the discovery of novel insights. In summary, the RDF representation of multiomics data provides a standardized and interoperable approach to integrate and analyze diverse omics datasets.
 
 For correct representation and analysis, it is important to capture the context of omics experimental data captured in the metadata description of biological studies in databases such as BioStudies - [EMBL-EBI](https://www.ebi.ac.uk/biostudies/) and map it to multiomics knowledge graphs. In this regard having the metadata of omics data described in a FAIR way can help researchers to speed up the cumbersome task of constructing knowledge graphs.
+
+![image](https://github.com/biohackathon-japan/bh23-multiomics-knowledge-graph/assets/166339/3e4b6179-febd-400d-9c1a-78c533413c09)
 
 ## Clinical knowledge graph
 
