@@ -64,4 +64,4 @@ The algorithms proposed for the different use cases are:
     
 and the notebooks are available at the [src/gcn/notebooks](src/gcn/notebooks) folder.
 
-Check https://github.com/alabarga/biohackathon-jp-2023/tree/main/multiomics-knowledge-graph for a more detailed view of work done durinh Biohackathon
+Check https://github.com/alabarga/biohackathon-jp-2023/tree/main/multiomics-knowledge-graph for a more detailed view of work done during Biohackathon
