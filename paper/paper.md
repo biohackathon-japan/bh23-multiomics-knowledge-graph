@@ -50,7 +50,9 @@ Multi-omics data integration and analysis involve the integration of different t
 
 More recently, autoencoders have been utilized for multi-omics data integration by leveraging their ability to learn a compressed representation or latent space of the input data. Autoencoders are neural network architectures consisting of an encoder and a decoder. The encoder maps the input data to a lower-dimensional latent space, while the decoder reconstructs the original input data from the latent representation.
 
+Graph Convolutional Networks (GCNs) can also be employed for multi-omics data analysis by leveraging the graph structure inherent in the data. GCNs are a type of neural network specifically designed to process and analyze graph-structured data, such as biological networks or interaction networks in multi-omics contexts. 
 
+In this work, we propose the construction of a graph representation where each node represents an entity (e.g., gene, protein, metabolite) and the edges represent relationships or interactions between them. The graph can incorporate multiple omics layers, where each layer corresponds to a specific type of biological entity. We can then apply graph convolutional operations to propagate information through the graph structure. GCNs leverage the graph topology to update the node features based on their neighborhood relationships. This enables capturing local and global patterns within the multi-omics data and allows downstream analysis such as patient classification or biormarker discovery.
 
 # Outcomes
 
