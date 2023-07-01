@@ -116,6 +116,8 @@ WHERE {
   - Biostudies mapping to knowledge graph
   - Multiomics data RDF representation definition
 
+For correct representation and analysis, it is important to capture the context of omics experimental data captured in the metadata description of biological studies in databases such as BioStudies - [EMBL-EBI](https://www.ebi.ac.uk/biostudies/) and map it to multiomics knowledge graphs. In this regard having the metadata of omics data described in a FAIR way can help researchers to speed up the cumbersome task of constructing knowledge graphs.
+
 ## Clinical knowledge graph
 
 Our use case was to explore the use of multilevel omics for the discovery of biomarkers and therapeutic targets for stroke. For this, we focused on a previous study comprising proteomics, transcriptomics, methylation and miRNA expression data for a cohort of 30 stroke patients. We propose an RDF representation for the patient metadata that can be extracted from the Electronic Health Records and integrated into our knowledge graph.
@@ -151,6 +153,11 @@ In order to enrich the clinical information added to the graph, we used Natural 
     - Node classification: Biomarkers
     - Node feature prediction: Data imputation
     - Link prediction: miRNA target prediction
+
+Machine learning on graphs is becoming an ubiquitous task in biology and biomedicine with applications ranging from function prediction to drug repurposing, and knowledge graphs play a key role as sources of graph-structured data. As such a knowledge graph-based integration approach with multi-omics data makes it amenable to be easily exploited by deep learning models such as Graph Neural Networks (GNNs). In recent years, GNNs have been utilized in extracting representations for heterogeneous graphs such as graph convolutional networks (GCN) and generative adversarial networks. During the biohackathon, we investigated several tools and methods for graph learning application on multiomics knowledge graphs: [kGCN: a graph-based deep learning framework for life science](https://github.com/clinfo/kGCN/tree/master), [JAMIE: Joint Variational Autoencoders for multimodal imputation and embedding](https://github.com/daifengwanglab/JAMIE), and the [StellarGraph machine learning library](https://stellargraph.readthedocs.io/en/stable/README.html). In the future, we plan to demonstrate the use of multiomics knowledge graphs using these approaches on several use cases.  
+
+### Use Cases
+Enabling machine learning to incorporate information about the structure of multiomics knowledge graphs into the model, opens new avenues to make predictions or discover new patterns using this relational knoweldge for application in new use cases. For example, we can perform graph classification for patient classification. A graph classification task predicts an attribute of each graph in a collection of graphs. Graph classification can also be done as a downstream task from graph representation learning/embeddings, by training a supervised or semi-supervised classifier against the embedding vectors. In the same way, node classification tasks predict an attribute of each node in a graph, which enable to be used for biomarker discovery. Another interesting use case is the use of the node feature prediction task for data imputation. Finally, link prediction to predict an attribute of edges in a graph can be used for instance to predict whether an edge should exist in the graph with application on associations of bioentities such as miRNA-target.      
  
 
 ![Caption for BioHackrXiv logo figure](./biohackrxiv.png)
