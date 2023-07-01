@@ -148,14 +148,6 @@ These benefits empower researchers to explore and analyze the data in a more fle
 In order to enrich the clinical information added to the graph, we used Natural Language Procesing techniques to extract information from clinical notes. Having established a working environment for NLP, we developed a set of pipelines that incorporated various natural language processing API to extract relevant clinical terms and their relationships from textual data. These terms were then matched and mapped to the corresponding ontology terms, thereby providing a standardized representation of the extracted information and integration with the knowledge graph.
 
 ## Machine Learning on knowledge graph
-  - Graph Neural Networks
-    - StellarGraph
-    - KGCN
-  - Use cases
-    - Graph classification: Patient classification
-    - Node classification: Biomarkers
-    - Node feature prediction: Data imputation
-    - Link prediction: miRNA target prediction
 
 Machine learning on graphs is becoming an ubiquitous task in biology and biomedicine with applications ranging from function prediction to drug repurposing, and knowledge graphs play a key role as sources of graph-structured data. As such a knowledge graph-based integration approach with multi-omics data makes it amenable to be easily exploited by deep learning models such as Graph Neural Networks (GNNs). In recent years, GNNs have been utilized in extracting representations for heterogeneous graphs such as graph convolutional networks (GCN) and generative adversarial networks. During the biohackathon, we investigated several tools and methods for graph learning application on multiomics knowledge graphs: [kGCN: a graph-based deep learning framework for life science](https://github.com/clinfo/kGCN/tree/master), [JAMIE: Joint Variational Autoencoders for multimodal imputation and embedding](https://github.com/daifengwanglab/JAMIE), and the [StellarGraph machine learning library](https://stellargraph.readthedocs.io/en/stable/README.html). In the future, we plan to demonstrate the use of multiomics knowledge graphs using these approaches on several use cases.  
 
