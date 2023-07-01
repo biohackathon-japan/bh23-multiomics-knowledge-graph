@@ -1,0 +1,23 @@
+PREFIX : <http://example.com/>
+PREFIX omop: <http://ohdsi.org/resource/>
+PREFIX schema: <http://schema.org/>
+PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
+SOURCE hospital_edge <jdbc:postgresql://localhost/hospital_edge>
+ITERATOR person_concept_iterator <sql: SELECT * FROM cdm.person AS p, vocabularies.concept AS c WHERE p.gender_concept_id = c.concept_id;> {
+    FIELD person_id <person_id>
+    FIELD birth_datetime <birth_datetime>
+    FIELD gender_concept_id <gender_concept_id>
+    FIELD vocabulary_id <vocabulary_id>
+    FIELD concept_name <concept_name>
+    FIELD concept_code <concept_name>
+}
+EXPRESSION omop_db <hospital_edge.person_concept_iterator>
+:Person omop:[omop_db.person_id] {
+    :birth_datetime [omop_db.birth_datetime] xs:dateTime ;
+    :gender_concept_id @:Concept;
+}
+:Concept omop:[omop_db.gender_concept_id] {
+    :concept_name [omop_db.concept_name] ;
+    :vocabulary_id [omop_db.vocabulary_id] ;
+    :concept_code [omop_db.concept_code] ;
+}
